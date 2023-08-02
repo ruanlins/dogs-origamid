@@ -8,6 +8,7 @@ import User from './Components/User/User';
 import { UserStorage } from './UserContext';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ProtectedRouter from './Components/Helper/ProtectedRouter';
+import Photo from './Components/Photo/Photo';
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
                 </ProtectedRouter>
               }
             />
+            <Route path="foto/:id" element={<Photo />} />
           </Routes>
           <Footer />
         </UserStorage>
