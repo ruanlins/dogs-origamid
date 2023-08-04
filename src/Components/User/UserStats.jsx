@@ -4,7 +4,6 @@ import useFetch from '../../Hooks/useFetch';
 import Loading from '../Helper/Loading';
 import Error from '../Helper/Error';
 import { GET_STATS } from '../../api';
-import { divide } from 'lodash';
 const UserStatsGraphs = React.lazy(() => import('./UserStatsGraphs'));
 
 const UserStats = () => {
